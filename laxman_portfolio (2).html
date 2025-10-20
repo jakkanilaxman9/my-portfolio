@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laxman Jakkani | Design Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+  body {
+    background: linear-gradient(135deg, #e0f7fa, #f1f5f9, #ffffff);
+    color: #0f172a;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  body::before {
+    content:"";
+    position:fixed;
+    top:0; left:0; right:0; bottom:0;
+    background-image: radial-gradient(circle at 15% 20%, rgba(59,130,246,0.08) 0 10%, transparent 10%),
+                      radial-gradient(circle at 85% 80%, rgba(45,212,191,0.1) 0 10%, transparent 10%),
+                      linear-gradient(135deg, rgba(56,189,248,0.08), rgba(255,255,255,0.2));
+    background-size: 400% 400%;
+    animation: bgMove 25s ease infinite;
+    z-index:-1;
+  }
+  @keyframes bgMove {
+    0% {background-position:0% 50%,100% 50%,50% 50%;}
+    50% {background-position:100% 50%,0% 50%,50% 50%;}
+    100% {background-position:0% 50%,100% 50%,50% 50%;}
+  }
+  .container { max-width:1000px; margin:0 auto; padding:2rem; }
+  header {
+    background: linear-gradient(90deg, #0ea5e9, #0284c7);
+    color:white; text-align:center;
+    padding:3rem 1rem; border-radius:20px;
+    box-shadow:0 8px 25px rgba(14,165,233,0.3);
+    transition: transform 0.3s ease;
+  }
+  header:hover { transform:scale(1.02); }
+  header h1 { font-size:2.8rem; letter-spacing:1px; }
+  header p { font-size:1.1rem; color:rgba(255,255,255,0.9); margin-top:0.5rem; position:relative; cursor:pointer; }
+  header p::after {
+    content:'';
+    position:absolute; width:0; height:2px; bottom:-4px; left:0;
+    background:white; transition: width 0.3s;
+  }
+  header p:hover::after { width:100%; }
+
+  section {
+    background:white; border-radius:12px; padding:2.5rem 2rem;
+    margin-top:2rem; box-shadow:0 6px 20px rgba(15,23,42,0.08);
+    transition: all 0.3s ease;
+    opacity:0; transform: translateY(30px);
+  }
+  section.show { opacity:1; transform: translateY(0); }
+  section:hover { box-shadow:0 10px 28px rgba(14,165,233,0.15); transform: translateY(-2px); }
+  h2 { color:#0f172a; border-left:6px solid #38bdf8; padding-left:12px; margin-bottom:1rem; }
+  .skills-list { display:flex; flex-wrap:wrap; gap:0.6rem; }
+  .skill {
+    background:#e0f2fe; color:#075985; padding:0.5rem 1rem; border-radius:999px;
+    font-size:0.9rem; font-weight:500; transition: 0.3s;
+  }
+  .skill:hover { background:#38bdf8; color:white; transform: scale(1.05); }
+  ul { list-style-type: disc; margin-left:1.25rem; }
+  .project, .internship-item { margin-bottom:1.25rem; cursor:default; }
+  .contact-info p { margin:0.35rem 0; }
+  .contact-info a { color:#0284c7; text-decoration:none; transition:0.3s; }
+  .contact-info a:hover { text-decoration:underline; color:#0ea5e9; }
+  footer { text-align:center; padding:1.5rem; margin-top:3rem; color:#475569; font-size:0.9rem; }
+
+  @media(max-width:820px){
+    header h1 { font-size:2.1rem; }
+    section { padding:2rem 1.2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>LAXMAN JAKKANI</h1>
+    <p>Aspiring Design Engineer | Product Design | CAD Modeling | DFMA</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and detail-oriented Mechanical Engineer specializing in product design, CAD/CAM modeling, and manufacturing optimization. With hands-on experience as a Student Design Intern at Tata Advanced Systems and professional training at MSME – Central Tool Room on MCC Master CAD/CAM, I have developed strong technical and analytical skills in 3D modeling, design validation, and CNC programming. My goal is to contribute to innovative product development and improve design efficiency by integrating modern CAD/CAM practices, DFMA principles, and precision engineering. I thrive in collaborative environments that challenge me to turn creative concepts into practical, manufacturable solutions.</p>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech (Mechanical Engineering)</strong> – Vaagdevi Engineering College, Warangal (JNTUH), 2025</li>
+      <li><strong>Diploma in Mechanical Engineering</strong> – VMR Polytechnic, Warangal, 2022</li>
+      <li><strong>SSC</strong> – Little’s Island School, Choppadandi, 2019</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+      <div class="skill">SolidWorks</div>
+      <div class="skill">CATIA V5</div>
+      <div class="skill">Siemens NX</div>
+      <div class="skill">AutoCAD</div>
+      <div class="skill">GD&amp;T</div>
+      <div class="skill">DFMA</div>
+      <div class="skill">SAP</div>
+      <div class="skill">MS Excel</div>
+      <div class="skill">CNC / CAM / CAD</div>
+      <div class="skill">Time Management</div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Design of a Disc Brake System for Light Vehicles</h3>
+      <p>Created 2D and 3D CAD models of rotor, caliper & brake pads using SolidWorks. Applied GD&T and prepared BOM for prototype development.</p>
+    </div>
+    <div class="project">
+      <h3>Power Generation through TEG Modules</h3>
+      <p>Developed a thermoelectric generator (TEG)-based system converting heat to electricity. Designed heat sinks & thermal management for efficiency improvement.</p>
+    </div>
+  </section>
+
+  <section class="internship">
+    <h2>Internship</h2>
+    <div class="internship-item">
+      <h3>Tata Advanced Systems Ltd. – Student Design Intern (6 months, Hyderabad)</h3>
+      <ul>
+        <li>Supported design team in creating/modifying 2D/3D models using CATIA & NX.</li>
+        <li>Designed custom fixtures for machining & assembly operations.</li>
+        <li>Prepared detailed drawings, BOMs, and documentation.</li>
+        <li>Collaborated on aerospace & defense design validation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="training">
+    <h2>Training & Certification</h2>
+    <ul>
+      <li><strong>MCC Master CAD/CAM (MSME – Central Tool Room)</strong> — Hands-on training in CAM workflows & CNC programming.</li>
+      <li>Additional workshops on CNC programming, fixture design, and shopfloor best practices.</li>
+    </ul>
+  </section>
+
+  <section class="strengths">
+    <h2>Strengths & Hobbies</h2>
+    <ul>
+      <li>Hardworking, Passionate, Dedicated</li>
+      <li>Leadership & Teamwork skills</li>
+      <li>Ability to work under pressure</li>
+      <li>Listening to music</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> <a href="tel:+917780792074">+91 7780792074</a></p>
+      <p><strong>Email:</strong> <a href="mailto:jakkanilaxman9@gmail.com">jakkanilaxman9@gmail.com</a></p>
+      <p><strong>Location:</strong> Karimnagar, Telangana, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Laxman Jakkani | Designed with passion for product design & innovation.</p>
+  </footer>
+</div>
+
+<script>
+  // Scroll animation for sections
+  const sections = document.querySelectorAll('section');
+  window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < triggerBottom){
+        section.classList.add('show');
+      }
+    });
+  });
+</script>
+</body>
+</html>
